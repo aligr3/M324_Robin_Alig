@@ -6,7 +6,8 @@
   "main": "index.js",
 "scripts": {
   "start": "node index.js",
-  "check-updates": "npx npm-check-updates --cooldown 3"
+  "check-updates": "npx npm-check-updates --cooldown 3",
+  "npx-demo": "npx npm-check-updates --cooldown 3"
 },
   "keywords": [],
   "author": "",
