@@ -6,21 +6,27 @@ export default defineConfig([
   {
     files: ['**/*.js'],
     languageOptions: {
-      globals: globals.node
+      globals: globals.node,
     },
     plugins: {
-      js
+      js,
     },
     extends: ['js/recommended'],
     rules: {
       eqeqeq: 'error',
-      'no-var': 'error'
-    }
+      'no-var': 'error',
+    },
   },
   {
     files: ['**/*.test.js'],
     languageOptions: {
-      globals: globals.mocha
-    }
-  }
+      globals: globals.mocha,
+    },
+  },
+  {
+    files: ['**/*.test.js'],
+    languageOptions: {
+      globals: globals.mocha,
+    },
+  },
 ])
