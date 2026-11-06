@@ -1,0 +1,33 @@
+{
+  "name": "exam1",
+  "version": "1.0.0",
+  "description": "Exam M324",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lint && npm run format:check && npm run convert && node index.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "convert": "node convert.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=24.22.1",
+    "npm": ">=11.19.1"
+  },
+  "dependencies": {
+    "@types/node": "^26.6.5",
+    "chalk": "^6.0.1",
+    "markdown-it": "^15.0.3",
+    "markdown-it-anchor": "^10.0.0",
+    "markdown-it-table-of-contents": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^10.13.0",
+    "prettier": "^3.9.10"
+  }
+}
